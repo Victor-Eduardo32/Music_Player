@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js" defer type="module"></script>
+</head>
+    <body>
+        <main class="players">
+                <div class="player-1">  
+                    <h1 class="nameGame">NameGame</h1>
+                    <div class="imgMusic">
+                        <a href="#" class="btn-floating btn-large halfway-fab">
+                            <i class="material-icons" id="play-pause">play_arrow</i>
+                        </a>
+                    </div>
+                    <h2 class="nameMusic">Name Music</h2>
+                    <p class="descriptionMusic">Descrition Music</p>
+
+                    <div class="row valign-wrapper" id="controls">
+                        <div class="col s1" id="current-duration">00:00</div>
+                        <div class="col s5 range-field valign-wrapper">
+                            <input type="range" min="0" max="0" id="seekbar" step="1">
+                        </div>
+
+                        <div class="col s2" id="total-duration">00:00</div>
+                        <div>
+                            <a href="#">
+                                <i class="material-icons" id="mute">volume_up</i>
+                            </a>
+                        </div>
+                        <div class="col s3 range-field valign-wrapper">
+                            <input type="range" min="0" max="100" id="vol-control" step="1">
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </body>
+</html>

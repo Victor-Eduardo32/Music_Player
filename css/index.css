@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FF4500; 
+}
+
+body {
+    background: #DCDCDC; 
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.player-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30em;
+    height: 35em;
+    background: #F8F8FF;
+    padding: 0.4em;
+    border: 5px outset var(--primary);
+} 
+
+svg {
+    color: var(--primary);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.nameGame {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.imgMusic {
+    position: relative;
+    width: 100%;
+    height: 20em; 
+    object-fit: fill;
+}
+
+.nameMusic {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.descriptionMusic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+#play-pause {
+    background: var(--primary);
+}
+
+#mute {
+    color: var(--primary);
+    transform: translateY(3px);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--primary);
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: var(--primary);
+}
+
+input[type="range"]::-ms-thumb {
+    background-color: var(--primary);
+}
